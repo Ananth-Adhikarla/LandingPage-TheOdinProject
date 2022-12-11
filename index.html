@@ -4,115 +4,108 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page</title>
+  <title>Title</title>
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
   <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 <body>
-  
-  <header>
-    <div id="brand">
-      <a href="#">
-        <span class="header_logo_text">Header Logo</span>
-      </a>
-    </div>
+
+  	<!---header section--->
+	<header>
+		<a href="#" class="logo">
+			<img src="logo.png">
+		</a>
+
     <nav>
-      <ul>
-        <li><a href="#" class="hero_secondary_text">Home</a></li>
-        <li><a href="#" class="hero_secondary_text">Products</a></li>
-        <li><a href="#" class="hero_secondary_text">About</a></li>
+      <ul class="navbar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </nav>
-    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
-      <div class="bar1"></div>
-      <div class="bar2"></div>
-      <div class="bar3"></div>
-      <ul class="mobile-menu">
-        <li><a href="#" class="hero_secondary_text">Home</a></li>
-        <li><a href="#" class="hero_secondary_text">Products</a></li>
-        <li><a href="#" class="hero_secondary_text">About</a></li>
-      </ul>
-    </div>
-  </header>
-  
-  <main>
-    
-    <!-- Hero  -->
-    <div class="hero-container">
-      <div class="HeroText hero-padding">
-        <p class="hero_main_text">This website is awesome</p>
-        <p class="hero_secondary_text">This website has some subtext that goes here under the </p>
-        <p class="hero_secondary_text">main title. It's smaller font and color is lower </p>
-        <p class="hero_secondary_text">contrast</p>
-        <button type="button" class="signup">Sign Up</button>
 
+		<div class="h-icons">
+			<a href="#"><i class='bx bxl-github'></i></a>
+			<div class="bx bx-menu" id="menu-icon"></div>
+		</div>
+	</header>
+  
+
+  <main>
+    <section class="hero">
+      <div class="heroLeft">
+        <span class="hero_main_text center_text">Making Your Life <span class="underline">Sweeter</span></span>
+        <span class="hero_secondary_text center_text">Come and experience the finest collection of candies & sweets. Imported from all over the world, We deliver a wide range of exotic & limited edition treats from around the world right to your doorstep.        </span>
+        <button type="button" class="signup">Sign Up</button>  
       </div>
-      <div class="HeroImage">
-        <p class="hero_secondary_text ">This is a place holder for this image</p>
+      <div class="heroRight">
+        <img src="candyshop.jpg" class="img-responsive" alt="candy shop" />
       </div>
-    </div>
+    </section>
 
     <!-- Info -->
-    <div class="info">
-      <p class="info_header">Some random information.</p>
-
+    <section class="info">
+      <div class="infoHeader">
+        <span class="info_header">Our Products</span>
+      </div>
       <div class="info-container">
         <div class="infobox">
-          <p class="hero_secondary_text "></p>
+          <img src="candyshop.jpg" class="img-responsive img-rounded" alt="candy shop" />
         </div>
         <div class="infobox">
-          <p class="hero_secondary_text "></p>
+          <img src="candyshop.jpg" class="img-responsive img-rounded" alt="candy shop" />
         </div>
         <div class="infobox">
-          <p class="hero_secondary_text "></p>
+          <img src="candyshop.jpg" class="img-responsive img-rounded" alt="candy shop" />
         </div>
         <div class="infobox">
-          <p class="hero_secondary_text "></p>
+          <img src="candyshop.jpg" class="img-responsive img-rounded" alt="candy shop" />
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- quotes -->
-    <div class="quote-container">
+    <section class="quote-container">
       <div class="quotebox">
-        <p class="quotes">This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</p>
+        <span class="quotes">No other factory in the world mixes its chocolate by waterfall… But it’s the only way if you want it just right.</span>
       </div>
       <div class="quotebox thor">
-        <p class="quotes"> -Thor, God of Thunder</p>
+        <span class="quotes"> <b>- Willy Wonka</b></span>
       </div>
-    </div>
+    </section>
 
-    <!-- cta -->
-    <!-- <div class="cta-container">
+    <section class="cta-container">
       <div class="ctabox">
-        <p class="">Call to action! It's time!</p>
+        <span class="cta_logo_text">What are you waiting for?</span>
+        <span class="cta_logo_text2 ">Sign up for our product by clicking that button right over there!</span>
       </div>
-      <div class="">
-        <p class="">Sign up for our product by clicking that button right over there!</p>
-      </div>
-    </div> -->
-    
-    <div class="cta-container">
-      <div class="HeroText cta-padding">
-        <p class="cta_logo_text">Call to action! It's time!</p>
-        <p class="hero_secondary_text ">Sign up for our product by clicking that button right over there!</p>
-      </div>
-      <div class="ctaImage">
+      <div class="ctabox2 thor">
         <button type="button" class="ctabtn">Sign Up</button>
       </div>
-    </div>
+    </section>
+
+    <footer>
+      <span> Copyright &copy Ananth Adhikarla - The Odin Project (Landing Page)</span>
+    </footer>
 
   </main>
-
-  <footer>
-    <p> Copyright &copy Ananth Adhikarla - The Odin Project (Landing Page)</p>
-  </footer>
-
 </body>
 
 <script>
-  function toggleMobileMenu(menu) {
-      menu.classList.toggle('open');
-  }
-</script>
+let menu = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
 
+menu.onclick = () => {
+	menu.classList.toggle('bx-x');
+	navbar.classList.toggle('active');
+};
+
+window.onscroll = () => {
+	menu.classList.remove('bx-x');
+	navbar.classList.remove('active');
+};
+</script>
 </html>
